@@ -71,7 +71,7 @@ st.markdown(f"""
     }}
 
     div[class^='css-1544g2n'] {{
-        padding-top: 1rem;
+        padding-top: 0rem;
     }}
 
     /* Radio button styling */
@@ -86,7 +86,7 @@ st.markdown(f"""
     /* Sidebar adjustments */
     section[data-testid="stSidebar"] {{
         top: 55px; 
-        background-color: rgb(207, 232, 237);
+        background-color: #84AFEF33;
         padding-top: 0px;
     }}
 
@@ -151,6 +151,7 @@ custom_css = """
 # Apply the custom CSS to your Streamlit app
 st.markdown(f'<style>{custom_css}</style>', unsafe_allow_html=True)
 
+
 # Inject custom CSS to change the border color of input box and multiselect dropdown
 st.markdown("""
     <style>
@@ -185,10 +186,10 @@ class MultiApp:
                 menu_icon='bank',
                 default_index=0,
                 styles={
-                "container": {"padding": "1px", "background-color": "white"},
+                "container": {"padding": "0px", "background-color": "#84AFEF33", "border": "1.1px solid #A9A9A9", "border-radius": "7px",},
                 "icon": {"color": "#272d55", "font-size": "17px"},
-                "nav-link": {"font-size": "14px", "text-align": "left", "margin": "0px", "color": "#272d55", "--hover-color": "#e7f1fa", "font-family": "sans-serif"},
-                "nav-link-selected": {"background-color": "#AFDBF5"},
+                "nav-link": {"font-size": "14px", "text-align": "left", "margin": "0px", "color": "#272d55", "--hover-color": "#c1d6fd", "font-family": "sans-serif"},
+                "nav-link-selected": {"background-color": "#AFDBF5", "border-left": "3px solid #272d55","color": "#272d55",},
                 "menu-title": {"text-align": "center", "font-weight": "bold", "font-size": "20px", "margin": "0px"},
             }
             )
@@ -219,9 +220,6 @@ class MultiApp:
             
             st.markdown(
                     """
-                    <div style="text-align: center;">
-                    </div>
-
                     <div style="text-align: justify;">
                     <p>The model monitoring dashboard provides essential insights into the stability index of our machine learning models, allowing users to evaluate their performance over time. It enables the generation of new models for comparison and assessment against baseline metrics. This intuitive interface ensures optimal model performance and facilitates timely adjustments based on evolving data conditions.</p>
                     </div>
