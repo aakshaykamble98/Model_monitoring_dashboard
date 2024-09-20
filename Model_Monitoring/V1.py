@@ -186,7 +186,7 @@ class MultiApp:
                 menu_icon='bank',
                 default_index=0,
                 styles={
-                "container": {"padding": "0px", "background-color": "#84AFEF33", "border": "1.1px solid #A9A9A9", "border-radius": "7px",},
+                "container": {"padding": "0px", "background-color": "rgb(132, 175, 239, 0.2)", "border": "1.1px solid #A9A9A9", "border-radius": "7px",},
                 "icon": {"color": "#272d55", "font-size": "17px"},
                 "nav-link": {"font-size": "14px", "text-align": "left", "margin": "0px", "color": "#272d55", "--hover-color": "#c1d6fd", "font-family": "sans-serif"},
                 "nav-link-selected": {"background-color": "#AFDBF5", "border-left": "3px solid #272d55","color": "#272d55",},
